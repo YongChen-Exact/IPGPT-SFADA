@@ -28,22 +28,22 @@ Convert nii.gz Files to h5 Format to facilitate follow-up processing and trainin
 `python dataloaders/data_processing.py`
 
 # Usage
-### 1. Training source model in a single center  
+### 1. Training a source model at a single center
 `python train_source.py`
 
-### 2. Select source-like samples in target domain
+### 2. Select source-like samples in a target domain
 `python selection/select_source_like_samples.py`
 
-### 3. Select influential points using IPL framework 
+### 3. Select influential points using the IPL framework 
 `python selection/select_influential_points.py`
 
-### 4. Training target model using source model from step 1 
+### 4. Training a target model using the source model from step 1 
 `python train_target.py`
 
-### 5. Testing on the target domain  
+### 5. Testing on the target domain
 `python test.py`
 
-### 6. Visualization Results
+### 6. Visualization results
 `python inference.py`
 
 
