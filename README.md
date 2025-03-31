@@ -19,15 +19,13 @@ Please prepare an environment with Python 3.7, Pytorch 1.7.1.
 
 Datasets can be acquired via following links:
 
-- Multi-centre, Multi-vendor and Multi-disease Cardiac Segmentation Dataset: click [here](https://www.ub.edu/mnms/).
-- Multi-site Prostate Segmentation Dataset: click [here](https://liuquande.github.io/SAML/).
-- Multi-modal Brain Tumor Segmentation: click [here](https://www.med.upenn.edu/cbica/brats2020/data.html).
-
+- Multi-site Prostate Segmentation (PS) Dataset: click [here](https://liuquande.github.io/SAML/).
+- Multi-centre, Multi-vendor and Multi-disease Cardiac Segmentation (M&MS) Dataset: click [here](https://www.ub.edu/mnms/).
+- Multi-modal Brain Tumor (BraTS) Segmentation: click [here](https://www.med.upenn.edu/cbica/brats2020/data.html).
 
 ## Preprocess Data
 Convert nii.gz Files to h5 Format to facilitate follow-up processing and training  
 `python dataloaders/data_processing.py`
-
 
 # Usage
 ### 1. Training source model in a single center  
@@ -45,17 +43,17 @@ Convert nii.gz Files to h5 Format to facilitate follow-up processing and trainin
 ### 5. Testing on the target domain  
 `python test.py`
 
-### 5. Visualization Results
+### 6. Visualization Results
 `python inference.py`
 
 
 # Results
 
-![BDK](imgs/Pro_result.png?raw=true)
+![](imgs/Pro_result.png?raw=true)
 
-![BDK](imgs/heart_result.png?raw=true)
+![](imgs/heart_result.png?raw=true)
 
-![BDK](imgs/brats_result.png?raw=true)
+![](imgs/brats_result.png?raw=true)
 
 ## Acknowledge
 Parts of codes are borrowed from [STDR](https://github.com/whq-xxh/SFADA-GTV-Seg).
