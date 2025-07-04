@@ -7,7 +7,7 @@ This repository contains the supported pytorch code and configuration files to r
 # Introduction
 This project propose a novel Source-Free Active Domain Adaptation (SFADA) method for medical image segmentation.  
 
-We first introduce an influential point learning (IPL) slice-wise framework to actively select influential points for oracle annotation. The progressive teacher (ProT) model is designed to generate and utilize reliable pseudo-labels independently. The fully supervised learning is performed on labeled samples. For unlabeled samples, curriculum learning-based self-training is adopted to further reduce the negative impact of noisy pseudo-labels.
+We first introduce an influential point learning (IPL) slice-wise framework to actively select influential points for oracle annotation. Within this framework, we develop an adaptive KNN algorithm to construct neighborhoods of source-like samples, enabling the transfer of source-specific knowledge. A class-balanced KL divergence is introduced to select diverse samples near the boundary for labeling. The progressive teacher (ProT) model is designed to generate and utilize reliable pseudo-labels independently. The fully supervised learning is performed on labeled samples. For unlabeled samples, curriculum learning-based self-training is adopted to further reduce the negative impact of noisy pseudo-labels.
 
 The experimental results on three multi-domain datasets demonstrated that our method outperformed state-of-the-art methods, even with only 2.5% of the labeling budget.
 ## Environment
