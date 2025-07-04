@@ -2,7 +2,7 @@
 
 This repository contains the supported pytorch code and configuration files to reproduce of our method.
 
-![](./methods.emf)
+![](imgs/methods.emf)
 
 # Introduction
 This project propose a novel Source-Free Active Domain Adaptation (SFADA) method for medical image segmentation.  
