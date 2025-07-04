@@ -54,7 +54,7 @@ def select_IPL(size, class_num, s_reprs, s_logits, t_reprs, t_logits, t_inds, un
             if class_mask.sum() > 0:
                 unc_c_map = uncertainties[c, :, :]
                 class_uncert = unc_c_map[class_mask].mean()
-                r_c[c] *= torch.exp(class_uncert)
+                r_c[c] *= torch.exp(-class_uncert)
 
         weight = torch.ones(class_num)
         weight[valid_class_mask] = 1 / (r_c[valid_class_mask] + 1e-8)
