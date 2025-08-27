@@ -6,7 +6,7 @@ We first introduce an influential point learning (IPL) slice-wise framework to a
 The experimental results on three multi-domain datasets demonstrate that our method outperforms state-of-the-art methods, even with only 2.5% of the labeling budget.
 
 The overall framework of our method:
-![](imgs/IPGPT.png)
+![](imgs/method.png)
 ## Dataset 📂
 
 Datasets can be downloaded from the following sources::
