@@ -117,5 +117,20 @@ Arguments:
 
 ![brats](imgs/brats_result.png)
 
+## Citation
+If you find our work useful or relevant to your research, please consider citing:
+
+` @ARTICLE{11197564,
+  author={Chen, Yong and Luo, Xiangde and Chen, Renyi and Li, Yiyue and Zhang, Han and Lyu, He and Song, Huan and Li, Kang},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={Source-Free Active Domain Adaptation via Influential-Points-Guided Progressive Teacher for Medical Image Segmentation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Adaptation models;Biomedical imaging;Annotations;Image segmentation;Reliability;Labeling;Data models;Uncertainty;Training;Nearest neighbor methods;Active learning;source-free domain adaptation;progressive teacher;medical image segmentation},
+  doi={10.1109/TMI.2025.3619837}}`
+
+
 ## Acknowledge
 Parts of the code are adapted from [STDR](https://github.com/whq-xxh/SFADA-GTV-Seg).
